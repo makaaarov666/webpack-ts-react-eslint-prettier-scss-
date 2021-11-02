@@ -1,9 +1,7 @@
 import React, { ReactElement } from 'react';
 
-import styles from './style.module.scss';
+import Layout from 'src/components/Layout';
 
-const App = (): ReactElement => {
-  return <div className={styles.wrapper}>Hello world</div>;
-};
+const App = (): ReactElement => <Layout></Layout>;
 
 export default App;

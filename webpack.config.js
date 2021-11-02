@@ -35,7 +35,10 @@ module.exports = (env) => {
       ]
     },
     resolve: {
-      extensions: ['.tsx', '.ts', '.js']
+      extensions: ['.tsx', '.ts', '.js'],
+      alias: {
+        src: path.resolve(__dirname, './src'),
+      }
     },
     output: {
       path: path.join(__dirname, 'build')

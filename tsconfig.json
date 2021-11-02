@@ -9,7 +9,10 @@
       "allowJs": true,
       "jsx": "react",
       "moduleResolution": "node",
-      "allowSyntheticDefaultImports": true
+      "allowSyntheticDefaultImports": true,
+      "paths": {
+        "src/*": [ "./src/*" ]
+      }
     },
     "exclude": [
       "./node_modules/**/*"
