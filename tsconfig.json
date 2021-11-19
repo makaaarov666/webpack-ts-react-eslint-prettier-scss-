@@ -2,6 +2,7 @@
     "compilerOptions": {
       "plugins": [{ "name": "typescript-plugin-css-modules" }],
       "outDir": "./build/",
+      "rootDir": "./",
       "sourceMap": true,
       "noImplicitAny": true,
       "module": "es6",
@@ -11,7 +12,12 @@
       "moduleResolution": "node",
       "allowSyntheticDefaultImports": true,
       "paths": {
-        "src/*": [ "./src/*" ]
+        "src/*": [ "./src/*" ],
+        "components/*": [ "./src/components/*" ],
+        "hooks/*": ["./src/hooks/*"],
+        "helpers/*": ["./src/helpers/*"],
+        "store/*": ["./src/store/*"],
+        "styles/*": [ "./src/styles/*" ],
       }
     },
     "exclude": [

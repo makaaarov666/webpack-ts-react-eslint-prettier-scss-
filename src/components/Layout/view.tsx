@@ -1,9 +1,17 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 
-import styles from './style.module.scss';
+import Clock from 'components/Clock';
+import ClockStopwatch from 'components/ClockStopwatch';
+import StopwatchTable from 'components/StopwatchTable';
 
-const App = (): ReactElement => (
-  <div className={styles.wrapper}>Hello world</div>
+import Wrapper from './styles';
+
+const View = () => (
+  <Wrapper>
+    <Clock />
+    <ClockStopwatch />
+    <StopwatchTable />
+  </Wrapper>
 );
 
-export default App;
+export default View;

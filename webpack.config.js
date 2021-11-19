@@ -14,6 +14,17 @@ module.exports = (env) => {
     module: {
       rules: [
         {
+          test: /\.(png|jp(e*)g|svg|gif)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: 'images/[hash]-[name].[ext]',
+              },
+            },
+          ],
+        },
+        {
           test: /\.tsx?$/,
           use: 'ts-loader',
           exclude: /node_modules/
@@ -38,6 +49,11 @@ module.exports = (env) => {
       extensions: ['.tsx', '.ts', '.js'],
       alias: {
         src: path.resolve(__dirname, './src'),
+        styles: path.resolve(__dirname, './src/styles'),
+        components: path.resolve(__dirname, './src/components'),
+        hooks: path.resolve(__dirname, './src/hooks'),
+        helpers: path.resolve(__dirname, './src/helpers'),
+        store: path.resolve(__dirname, './src/store'),
       }
     },
     output: {
