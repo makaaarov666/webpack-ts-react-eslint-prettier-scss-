@@ -26,6 +26,8 @@
   ],
   "plugins": ["react", "jsx-a11y", "prettier"],
   "rules": {
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "semi": 0,
     "react/jsx-indent": ["error", 2],
     "max-len": [2, 120, 2],
